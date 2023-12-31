@@ -1,0 +1,159 @@
+.header {
+  background-color: var(--bg-color);
+  padding: 20px 0;
+  z-index: 999;
+  isolation: isolate;
+
+  .logo {
+    position: relative;
+    width: 58px;
+    height: 53px;
+
+    &::after {
+      content: "GARAGE";
+      position: absolute;
+      color: var(--primary-color);
+      top: 37px;
+      left: 0;
+      font-family: "Oswald", sans-serif;
+      font-weight: 700;
+      font-size: 15.6px;
+    }
+  }
+
+  .navbar-toggler {
+    background-color: var(--primary-color);
+    padding: 5px;
+
+    .navbar-toggler-icon {
+      font-size: 50px;
+      width: 25px;
+      height: 25px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  .menu {
+    margin-right: 0;
+
+    .nav-link {
+      font-weight: 600;
+      color: var(--secondary-color);
+      margin-right: 20px;
+
+      &.active {
+        color: var(--primary-color);
+      }
+    }
+
+    .dropdown-menu {
+      background-color: var(--bg-color);
+
+      .dropdown-item {
+        color: var(--secondary-color);
+
+        &.active {
+          background-color: var(--primary-color);
+        }
+
+        &:hover {
+          background-color: var(--primary-color);
+        }
+      }
+    }
+  }
+}
+
+/*Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {
+  .header {
+    .logo {
+      width: 50px;
+      height: 50px;
+      overflow: hidden;
+
+      &::after {
+        top: 33px;
+        font-size: 13.5px;
+      }
+    }
+    .menu {
+      margin-top: 10px;
+      text-align: right;
+      margin-right: 0;
+
+      .nav-link {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .header {
+    .logo {
+      width: 60px;
+      height: 60px;
+      overflow: hidden;
+
+      &::after {
+        top: 38px;
+        font-size: 16.4px;
+      }
+    }
+    .menu {
+      margin-top: 10px;
+      text-align: right;
+      margin-right: 0;
+
+      .nav-link {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .header {
+    .menu {
+      margin-top: 10px;
+      text-align: right;
+      margin-right: 0;
+
+      .nav-link {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .header {
+    .menu {
+      margin-right: 45px;
+    }
+  }
+}
+
+/*X-Large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+  .header {
+    .menu {
+      margin-right: 50px;
+    }
+  }
+}
+
+/*XX-Large devices (larger desktops, 1400px and up)*/
+@media (min-width: 1400px) {
+  .header {
+    .menu {
+      margin-right: 50px;
+    }
+  }
+}

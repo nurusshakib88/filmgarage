@@ -1,0 +1,91 @@
+.contact {
+  padding: 100px 0;
+
+  h1 {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .contact_info {
+    h3 {
+      font-size: 30px;
+      margin-bottom: 20px;
+    }
+
+    a {
+      text-decoration: none;
+      color: var(--secondary-color);
+      display: block;
+      margin-bottom: 10px;
+      transition: 0.3s;
+      svg {
+        margin-right: 10px;
+      }
+
+      &:hover {
+        color: var(--primary-color);
+      }
+    }
+  }
+
+  .contact_form {
+    background-color: var(--bg-color);
+    padding: 20px;
+    border-radius: 5px;
+  }
+}
+
+/*Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {
+  .contact {
+    text-align: center;
+    padding: 50px 0;
+
+    .contact_info {
+      margin-bottom: 40px;
+
+      h3 {
+        font-size: 22px;
+      }
+    }
+  }
+}
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .contact {
+    text-align: center;
+    padding: 50px 0;
+
+    .contact_info {
+      margin-bottom: 40px;
+
+      h3 {
+        font-size: 22px;
+      }
+    }
+  }
+}
+
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .contact {
+    padding: 60px 0;
+
+    .contact_info {
+      margin-bottom: 40px;
+    }
+  }
+}
+
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+}
+
+/*X-Large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+}
+
+/*XX-Large devices (larger desktops, 1400px and up)*/
+@media (min-width: 1400px) {
+}

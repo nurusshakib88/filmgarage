@@ -1,0 +1,76 @@
+.mode_toggler {
+  position: relative;
+
+  .theme {
+    margin-right: 48px;
+    position: fixed;
+    z-index: 9999;
+    top: 35px;
+    right: 50px;
+    background: transparent;
+    color: var(--text-color);
+    border: none;
+    padding: 0;
+    transform: rotate(7deg);
+    transition: 0.3s;
+  }
+}
+
+/*Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {
+  .mode_toggler {
+    .theme {
+      right: 80px;
+      top: 36px;
+
+      svg {
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .mode_toggler {
+    .theme {
+      right: 110px;
+      top: 39.5px;
+
+      svg {
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .mode_toggler {
+    .theme {
+      right: 120px;
+      top: 36px;
+
+      svg {
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .mode_toggler {
+    .theme {
+      right: 5px;
+    }
+  }
+}
+
+/*X-Large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+}
+
+/*XX-Large devices (larger desktops, 1400px and up)*/
+@media (min-width: 1400px) {
+}

@@ -1,0 +1,28 @@
+.team {
+  text-align: center;
+  margin-bottom: 50px;
+  .profile_pic {
+    aspect-ratio: 1/1;
+    overflow: hidden;
+    border-radius: 50%;
+
+    img {
+      width: 100%;
+      object-fit: contain;
+      filter: saturate(0);
+
+      transition: 0.3s;
+
+      &:hover {
+        filter: saturate(1);
+        scale: 1.05;
+      }
+    }
+  }
+  .member_name {
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 20px;
+  }
+}

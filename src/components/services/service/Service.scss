@@ -1,0 +1,73 @@
+.service {
+  overflow: hidden;
+  background-color: var(--bg-color-b);
+  border-radius: 5px;
+  transition: 0.3s;
+
+  a {
+    text-decoration: none;
+  }
+
+  img {
+    width: 100%;
+    object-fit: cover;
+    height: 250px;
+    transition: 0.3s;
+  }
+  h2 {
+    position: relative;
+    color: var(--text-color);
+    font-size: 20px;
+    font-weight: 600;
+    background-color: var(--bg-color-b);
+    padding: 10px;
+    margin-bottom: 0;
+    z-index: 99;
+  }
+
+  &:hover {
+    box-shadow: 0px 2px 5px 2px var(--shadow);
+    img {
+      scale: 1.1;
+    }
+  }
+}
+
+/*Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {
+  .service {
+    img {
+      height: 150px;
+    }
+  }
+}
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .service {
+    img {
+      height: 150px;
+    }
+  }
+}
+
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .service {
+    img {
+      height: 150px;
+    }
+  }
+}
+
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+}
+
+/*X-Large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+}
+
+/*XX-Large devices (larger desktops, 1400px and up)*/
+@media (min-width: 1400px) {
+}

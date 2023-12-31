@@ -1,0 +1,26 @@
+.aboutUs {
+  .whatdo {
+    padding: 100px 0;
+    background-color: var(--bg-color-b);
+    overflow: hidden;
+
+    h1 {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    img {
+      margin-left: auto;
+      display: flex;
+      border-radius: 5px;
+    }
+  }
+
+  .ourteam {
+    padding: 100px 0;
+    h1 {
+      text-align: center;
+      margin-bottom: 80px;
+    }
+  }
+}

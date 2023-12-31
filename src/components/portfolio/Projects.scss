@@ -1,0 +1,156 @@
+.portfolio {
+  padding: 100px 0;
+
+  h1 {
+    font-size: 40px;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  .categories {
+    margin-bottom: 50px;
+    padding: 0;
+
+    ul {
+      list-style: none;
+      padding: 0;
+
+      li {
+        list-style: none;
+        padding: 0;
+        margin-bottom: 10px;
+
+        ol {
+          display: flex;
+          flex-wrap: wrap;
+          padding: 0;
+          justify-content: center;
+          align-items: center;
+          overflow: hidden;
+
+          li {
+            height: 45px;
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+
+            a {
+              text-align: center;
+              text-decoration: none;
+              color: var(--secondary-color);
+              display: flex;
+              align-items: center;
+              height: 100%;
+              padding: 0 15px;
+              cursor: pointer;
+              border: 1px solid var(--secondary-color);
+
+              &.active {
+                background-color: var(--primary-color);
+              }
+
+              &:hover {
+                background-color: var(--primary-color);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.isotope-item {
+  z-index: 2;
+}
+.isotope-hidden.isotope-item {
+  z-index: 1;
+}
+.isotope,
+.isotope .isotope-item {
+  /* change duration value to whatever you like */
+  -webkit-transition-duration: 0.8s;
+  -moz-transition-duration: 0.8s;
+  transition-duration: 0.8s;
+}
+.isotope-item {
+  margin-right: -1px;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.isotope {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transition-property: height, width;
+  -moz-transition-property: height, width;
+  transition-property: height, width;
+}
+.isotope .isotope-item {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transition-property: -webkit-transform, opacity;
+  -moz-transition-property: -moz-transform, opacity;
+  transition-property: transform, opacity;
+}
+
+/*Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {
+  .portfolio {
+    padding: 50px 0;
+
+    .categories {
+      margin-bottom: 30px;
+
+      ul {
+        li {
+          ol {
+            li {
+              a {
+                padding: 0 10px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .portfolio {
+    padding: 50px 0;
+  }
+}
+
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .portfolio {
+    padding: 60px 0;
+
+    .categories {
+      ul {
+        li {
+          ol {
+            li {
+              height: 50px;
+              line-height: 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+}
+
+/*X-Large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+}
+
+/*XX-Large devices (larger desktops, 1400px and up)*/
+@media (min-width: 1400px) {
+}

@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Jost", sans-serif;
+  font-weight: 600;
+}
+
+:root {
+  --bg-color: #040717;
+  --primary-color: #3486d8;
+  --text-color: #fff;
+  --shadow: #000;
+  --secondary-color: #fff;
+  --bg-color-b: #101324;
+}
+
+.light {
+  --bg-color: #fff;
+  --text-color: #000;
+  --secondary-color: #000;
+  --shadow: rgb(0, 0, 0, 0.3);
+  --bg-color-b: #dedede;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+.active {
+  color: var(--primary-color);
+}
+
+iframe {
+  border: none;
+}
+
+html {
+  scroll-behavior: auto !important;
+}
+
+/*Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {
+}
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+}
+
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+  p {
+    font-size: 16px;
+  }
+}
+
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+}
+
+/*X-Large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+}
+
+/*XX-Large devices (larger desktops, 1400px and up)*/
+@media (min-width: 1400px) {
+}
